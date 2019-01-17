@@ -1,6 +1,7 @@
 const WebSocket = require("ws");
 
-const ws = new WebSocket("ws:localhost:3000");
+var ws = new WebSocket("https://sierra-io.herokuapp.com/");
+//const ws = new WebSocket("ws:localhost:3000");
 let wsOpen = false;
 
 ws.on("open", function open() {
