@@ -19,3 +19,10 @@ $> git remote add <URL>
 $> git push -u origin master
 
 
+/*******************************************/
+WSS
+
+$> npm install ws --save
+$> npm install fs --save
+$> npm install https --save
+
