@@ -8,6 +8,7 @@ require("../startup/db")();
 const { saveData } = require("../config/firebase");
 
 const { Meter, validate } = require("../models/meters");
+
 const {
   ackMsg,
   noAckMsg,
@@ -22,8 +23,6 @@ const _ = require("lodash");
 const httpServer = http.createServer();
 httpServer.listen(process.env.PORT, "0.0.0.0");
 const webSocketServer = require("ws").Server;
-//npm i ws --save
-//npm i ws@1.0.1
 
 const wss = new webSocketServer({
   server: httpServer,
@@ -41,13 +40,6 @@ wss.on("connection", (ws, req) => {
     Clients: wss.clients,
     Socket: ws
   };
-
-  /*
-  console.log({
-    client: clientInfo.ip,
-    message: JSON.stringify(packetReceived)
-  });
-  */
 
   //OnMessage Received
   ws.on("message", async function incoming(message) {

@@ -1,7 +1,7 @@
 const WebSocket = require("ws");
 const moment = require("moment");
-var ws = new WebSocket("https:sierra-io.herokuapp.com");
-//const ws = new WebSocket("ws:10.10.3.2:3000");
+//var ws = new WebSocket("https:sierra-io.herokuapp.com");
+const ws = new WebSocket("ws:127.0.0.1:3000");
 const _ = require("lodash");
 let wsOpen = false;
 
