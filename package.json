@@ -10,9 +10,13 @@
     "author": "Ayex",
     "license": "ISC",
     "dependencies": {
+        "firebase": "^5.8.0",
+        "firebase-admin": "^6.5.0",
         "fs": "0.0.1-security",
         "https": "^1.0.0",
         "joi": "^14.3.1",
+        "lodash": "^4.17.11",
+        "moment": "^2.24.0",
         "mongoose": "^5.4.4",
         "ws": "^6.1.2"
     }

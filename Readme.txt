@@ -26,3 +26,4 @@ $> npm install ws --save
 $> npm install fs --save
 $> npm install https --save
 
+$> npm i firebase
